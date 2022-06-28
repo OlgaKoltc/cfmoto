@@ -1,0 +1,12 @@
+.body {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 9068px;
+    margin: 0 auto;
+}
+.section {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 1789px;
+    background-color: #F4F4F4;
+}
