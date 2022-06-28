@@ -1,4 +1,5 @@
-.body {
+@import url(../style/vars.css);
+body {
     max-width: 1440px;
     width: 100%;
     max-height: 9068px;
