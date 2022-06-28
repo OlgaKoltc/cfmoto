@@ -11,3 +11,20 @@ body {
     max-height: 1789px;
     background-color: #F4F4F4;
 }
+    .section__title {
+        justify-content: center;
+line-height: 46.8px;
+    }
+.title {
+    display: flex;
+    font-size: 36px;
+font-weight: 700;
+}
+.item {
+    max-width: 1568px;
+    width: 100%;
+    max-height: 404px;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 70px;
+}
