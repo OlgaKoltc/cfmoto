@@ -124,4 +124,9 @@ align-content: flex-start;
 .item-reverse {
     flex-direction: row-reverse;
     margin-top: 140px;
+    margin-bottom: 140px;
+}
+.item-scroll__scroll-2 {
+    display: flex;
+    justify-content:flex-end;
 }
