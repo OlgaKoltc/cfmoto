@@ -5,16 +5,154 @@ body {
     max-height: 9068px;
     margin: 0 auto;
 }
+a {
+    text-decoration: none;
+}
+.header {
+    max-width: 100%;
+}
+.header_top {
+    background-image: url(../assets/images/images_tour/ds_store.png);
+    min-height: 600px;
+}
+.header_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.header_container_top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.nav_list {
+    display:flex;
+}
+.nav_list_item {
+    margin-right: 50px;
+}
+.nav_list_item a, .phone a, .phone_button, .header_subtitle,.button_test,.subtitle_test,.tour_button a,.button_test a {
+    color: #FFFFFF;
+}
+.header_up_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_up_row__title_box {
+    display: flex;
+    align-content: center;
+    max-width: 595px;
+    margin-top: 108px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 88px;
+}
+.phone_button {
+    display: block;
+    padding: 12px 20px;
+    margin-top: 11px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 9px;
+}
+.nav_list_item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.nav_list_item_booking a{
+    color: #037E8C;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.header_title_box__h1 {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 88px;
+    letter-spacing: 0.045em;
+}
+.scroll_items {
+    transform: rotate(90deg);
+}
+.header_subtitle_box {
+    max-width: 644px;
+    margin-top: 37px;
+}
+.header_tour_button_box {
+    max-width: 274px;
+    height: 55px;
+    margin-top: 82px;
+    margin-bottom: 192px;
+    background-color: #037E8C;
+    border-radius: 9px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tour_button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    padding-left: 20px;
+    color: #FFFFFF;
+}
+.vector_button {
+    margin-right: 12px;
+}
 .section {
     max-width: 1440px;
     width: 100%;
-    max-height: 1789px;
-    background-color: #F4F4F4;
     margin: 0 auto;
 }
+.section_benefits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 212px;
+    grid-gap: 31px;
+    margin-bottom: 100px;
+  }
+  
+  .benefits_title{
+    font-size: 16px;
+    padding: 21px 0 21px 0;
+  }
+  
+  .benefits{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .benefits_logo{
+    padding-top: 47px;
+    height: 36px;
+  }
+  
+  .benefits_ellipse{
+    height: 45px;
+    position: relative;
+    z-index:-1;
+    right: 32px;
+  }
+  .section_tour {
+  background-color: #F4F4F4;
+  max-height: 1789px;
+  max-width: 1500px;
+  width: 100%;
+  }
     .section__title {
         justify-content: center;
 line-height: 46.8px;
+padding-top: 57px;
     }
 .title {
     display: flex;
