@@ -1,15 +1,116 @@
 @import url(../style/vars.css);
 .container {
-    max-width: 1440px;
+    max-width: 1540px;
     width: 100%;
     max-height: 2168px;
     margin: 0 auto;
     background-color:  rgba(18, 18, 20, 0.8);
 }
-.container_excursion {
-    max-width: 1300px;
-    height: 1988px;
+.container-page {
+    max-width: 1200px;
+    height: 1900px;
     width: 100%;
     border-radius: 9px;
     margin: 0 auto;
+    background-color: #ffff;
+}
+.container__icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.container__link {
+    padding: 50px 50px 50px 0;
+}
+.item {
+    max-width: 1200px;
+    width: 100%;
+    max-height: 550pxpx;
+    display: flex;
+    align-items: center;
+}
+.text-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 480px;
+    padding-right: 30px;
+    flex-shrink: 0;
+}
+.item__line {
+    align-self: flex-start;
+ padding: px;
+}
+.text-item__ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 17.39px;
+}
+.text-item__li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.text-item__span {
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text-item__route {
+    font-weight: 600;
+    font-size: 18px;
+line-height: 23.4px;
+}
+.text-item__p {
+   font-weight: 400;
+font-size: 14px;
+line-height: 22.4px;
+margin-bottom: 39px;
+}
+.subtitle {
+    font-weight: 600; 
+font-size: 36px;
+line-height: 39.13px;
+}
+.subtitle__span {
+    font-weight: 700;
+font-Size: 24px;
+line-height: 26.09px;
+}
+.btn {
+    display: flex;
+    max-width: 175px;
+Height: 45px;
+width: 100%;
+border-radius: 9px;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+font-size: 14px;
+}
+.text-item__button {
+    display: flex;
+    max-width: 368px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.button_white {
+    color: #037E8C;  
+    border: 1.5px solid #037E8C;
+}
+.item-scroll {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-content: flex-start;
+}
+.item-scroll__foto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
 }
