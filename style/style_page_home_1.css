@@ -281,6 +281,7 @@ align-content: flex-start;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 200px;
 }
 .video-block__video {
     background-image: url(../assets/video/stop.png);
@@ -359,4 +360,73 @@ padding-left: 23px;
 }
 .terms__text-bold {
     font-weight: 600;
+}
+.section_test {
+    max-width: 100%;
+    max-height: 350px;
+    background-image: url(../assets/images/icons/icons_tour/mask_group.png);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.section_title_test {
+    margin-top: 81px;
+    display: flex;
+    justify-content: center;
+}
+.title_test {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 47px;
+}
+.subtitle_test {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+}
+.button_test_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 43px;
+    margin-bottom: 94px;
+}
+.button_test {
+    max-width: 175px;
+    background-color: #037E8C;
+    padding: 14px 44px;
+    border-radius: 9px;
+}
+.section_photo_scroll {
+    max-width: 100%;
+    max-height: 600px;
+    background-color:#F4F4F4;
+    margin-bottom: 100px;
+}
+.scroll_title {
+    padding: 100px 0 100px;
+    display: flex;
+    justify-content: center;
+
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 47px;
+color: #121214;
+}
+.section_photo_box {
+    display: flex;
+    overflow-x: auto;
+}
+.section_photo_box::-webkit-scrollbar{
+    width: 0;
+}
+.section_scroll_item {
+    margin-right: 27px;
+}
+.section_scroll_sign {
+    padding: 65px 0 65px;
+    display: flex;
+    justify-content: center;
 }
