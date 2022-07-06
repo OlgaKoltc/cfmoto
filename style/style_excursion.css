@@ -1,4 +1,14 @@
-@import url(../style/vars.css);
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-b';
+    src: url(../fonts/Montserrat-Black.ttf);
+}
+body {
+    font-family: 'Montserrat';
+}
 .container {
     max-width: 1540px;
     width: 100%;
@@ -8,7 +18,7 @@
 }
 .container-page {
     max-width: 1200px;
-    height: 1900px;
+    height: 1800px;
     width: 100%;
     border-radius: 9px;
     margin: 0 auto;
@@ -22,24 +32,36 @@
     padding: 50px 50px 50px 0;
 }
 .item {
-    max-width: 1200px;
+    max-width: 1440px;
     width: 100%;
-    max-height: 550pxpx;
+    max-height: 580px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 47px;
+}
+.item__line {
+  align-self: flex-start;
+  padding-top: 30px;
 }
 .text-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    max-width: 480px;
+    max-width: 475px;
     padding-right: 30px;
     flex-shrink: 0;
 }
-.item__line {
-    align-self: flex-start;
- padding: px;
+.sbt {
+ font-weight: 600; 
+ margin-bottom: 20px;  
+}
+.text-item__rate {
+  line-height: 26px;
+  display: flex;
+  font-size: 24px;
+font-weight: 700;
 }
 .text-item__ul {
     display: flex;
@@ -52,14 +74,10 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-}
-.text-item__span {
-    font-weight: 300;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 16px;
+    line-height: 17.39px;
 }
 .text-item__route {
-    font-weight: 600;
     font-size: 18px;
 line-height: 23.4px;
 }
@@ -69,15 +87,15 @@ font-size: 14px;
 line-height: 22.4px;
 margin-bottom: 39px;
 }
-.subtitle {
-    font-weight: 600; 
+.text-item__subtitle {
 font-size: 36px;
 line-height: 39.13px;
 }
-.subtitle__span {
-    font-weight: 700;
-font-Size: 24px;
-line-height: 26.09px;
+.text-item__span {
+    font-weight: 300;
+font-Size: 16px;
+line-height: 17.39px;
+padding: 0 10px 0 10px;
 }
 .btn {
     display: flex;
@@ -97,20 +115,20 @@ font-size: 14px;
     justify-content: space-between;
     align-items: center;
 }
-.button_white {
+.text-item__button_white {
     color: #037E8C;  
     border: 1.5px solid #037E8C;
+    text-decoration: none;
 }
 .item-scroll {
 display: flex;
-flex-direction: column;
+overflow-x: auto;
+align-items: center;
 justify-content: space-between;
-align-content: flex-start;
+max-width: 800px;
+width: 100%;
+max-height: 370px;
 }
 .item-scroll__foto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
+  margin-right: 10px;
 }
