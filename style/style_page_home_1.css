@@ -9,8 +9,7 @@
 body {
     font-family: 'Montserrat';
 }
-
-/* {
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -135,8 +134,8 @@ a {
     grid-template-columns: repeat(4, 1fr);
     height: 240px;
     grid-gap: 31px;
-    max-width: 1300px;
-    width: 100%;
+    /*max-width: 1440px;
+    width: 100%;*/
     margin: 0 auto;
   }
   
@@ -520,7 +519,135 @@ color: #121214;
     border-radius: 9px;
     border: #037E8C;
 }
-
+.gifts{
+    height: 1123px;
+    /*width: 1440px;*/
+    background-image: url(../assets/img/gifts/8qcdvQ.png);
+   }
+  
+ .gifts__special-offer{
+    height: 510px;
+    /*width: 1440px;*/
+    background-color: white;
+ }
+ .gifts__sale{
+    padding-top: 45px;
+    justify-content: flex-start;
+    /*max-width: 1302px;*/
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    .gifts__sale, .gifts__birthday, .gifts__cottages, .gifts__sertificate-info, .gifts__sertificate-title, .gifts__sertificate-image{
+    display: flex;
+    }
+    
+    .gifts__birthday{
+        background-image: url(../assets/img/gifts/HB.png);
+        background-repeat: no-repeat;
+        width: 636px;
+        height: 311px;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 29px;
+        padding-top: 26px;
+    }
+    
+    .gifts__birthday-info, .gifts__cottages-info{
+       width: 44%; 
+    }
+    
+    .gifts__sale-title{
+        font-size: 36px;
+        font-weight: bolder;
+        padding-bottom: 19px;
+    }
+    
+    .gifts__sale-title,.gifts__sale-subtitle, .gifts__sertificate-subtitle, button{
+        color: #037E8C;
+    }
+    .gifts__sale-subtitle{
+        font-size: 24px;
+        padding-bottom: 19px;
+    }
+    
+    .gifts__cottages{
+    background-image: url(../assets/img/gifts/Ex-Kuban.png);
+    background-repeat: no-repeat;
+    width: 636px;
+        height: 311px;
+        padding-right: 70px;
+        flex-direction: column;
+       align-items: flex-end;
+       padding-top: 26px;
+    }
+     
+    
+    .gifts__sertificate-subtitle{
+        text-align: center;
+        font-size: 20px;
+        font-size: 20px;
+        padding-top: 13px;
+        line-height: 140%;
+    }
+    .gifts__sertificate-title{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    button{
+    border: 1.5px solid #037E8C;
+    border-radius: 9px;
+    padding: 14px 45px 14px 45px;
+    margin-top: 70px;
+    font-size: 14px;
+    line-height: 130%;
+    }
+    
+    .gifts__sertificate-text{
+        width: 37%;
+        height: 180px;
+        padding: 70px;
+        line-height: 172.5%;
+        font-size: 18px;
+    }
+    
+    .gifts__sertificate-image{
+        background-image: url(../assets/img/gifts/MaskGroup_present.png);
+        width: 636px;
+        height: 311px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 46px;
+    }
+    
+    .gifts__sertificate-image-info{
+        width: 37%;
+      padding-top: 147px; 
+    padding-left: 124px;
+    }
+    
+    .gifts__sertificate-image-title{
+        font-weight: 700;
+    font-size: 24px;
+    line-height: 124%;
+    color: #FFFFFF; 
+    }
+    
+    .gifts__sertificate-image-subtitle{
+        font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-top: 22px;
+    }
+    
+    .gifts__sertificate-image-logo{
+        width: 104px;
+        height:  133px;
+        padding-top: 97px;
+        padding-left: 119px;
+    }
 .extra-service {
     margin: 61px 0px 109px 0px;
 }

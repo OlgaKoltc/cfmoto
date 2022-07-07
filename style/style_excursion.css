@@ -17,6 +17,9 @@ body {
     background-color:  rgba(18, 18, 20, 0.8);
 }
 .container-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     max-width: 1200px;
     height: 1800px;
     width: 100%;
@@ -36,13 +39,11 @@ body {
     width: 100%;
     max-height: 580px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 47px;
+    justify-content: space-between;
 }
 .item__line {
   align-self: flex-start;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 .text-item {
     display: flex;
@@ -131,4 +132,44 @@ max-height: 370px;
 }
 .item-scroll__foto {
   margin-right: 10px;
+}
+.item-routе {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+max-width: 1078px;
+width: 100%;
+max-height: 400px;
+margin: 0 auto;
+color: #121214;
+font-weight: 400;
+font-size: 16px;
+line-height: 25.6px;
+}
+.title {
+    font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+}
+.tour-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+max-width: 1078px;
+width: 100%;
+max-height: 750px;
+margin: 0 auto;
+}
+.foto-price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.foto {
+    display: flex;
+    position: relative;
+}
+.foto__info {
+    position: absolute;
 }
