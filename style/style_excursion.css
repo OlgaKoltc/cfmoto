@@ -173,3 +173,8 @@ margin: 0 auto;
 .foto__info {
     position: absolute;
 }
+.booking-container {
+    background-image: url(../assets/images/page_excr/fon_tour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
