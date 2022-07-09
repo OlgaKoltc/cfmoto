@@ -6,8 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Request</title>
     <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/vars/vars.css" />
-    <link rel="stylesheet" href="./style/style_request/style_request.css" />
+    <link rel="stylesheet" href="./style/style_request.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="request">
+      <div class="request__body">
+        <div class="request__form">
+          <div class="request__container">
+            <h2 class="request__title">Оставить заявку</h2>
+            <div class="request__form-group">
+              <p>Как к Вам обращаться?</p>
+              <div class="input-group-name">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inlineFormInputGroupName"
+                />
+              </div>
+            </div>
+            <div class="request__form-group">
+              <p>Телефон или WhatsApp</p>
+              <div class="input-group-phone">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inlineFormInputGroupNumber"
+                />
+              </div>
+            </div>
+            <form>
+              <button>Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

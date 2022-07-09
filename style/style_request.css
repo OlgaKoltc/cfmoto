@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-b';
+    src: url(../fonts/Montserrat-Black.ttf);
+}
+body {
+    font-family: 'Montserrat';
+}
+.request{
+    width: 1440px;
+    height: 718px;
+    background-color:rgba(18, 18, 20, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.request__body{
+    width: 1074px;
+    height: 479px;
+    background-color:#FFFFFF ;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+
+@media (max-width:1440px){
+    .request__body{
+        max-width: 1074px;
+    }
+}
+
+@media (max-width:767px){
+    .request__body{
+       max-width: 340px;
+       margin-left: 10px;
+    }
+    .request__container{
+       max-width: 320px; 
+    }
+
+    .input{
+        max-width: 100px; 
+     }
+
+     .request{
+       background-image: url(../assets/img/request/лого.png); 
+       background-repeat: no-repeat;
+     }
+}
+
+.request__title{
+    font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #121214; 
+margin: 80px 0 30px 0;
+}
+
+button{
+    background-color: #037E8C;
+    border: 1.5px solid #037E8C;
+    padding: 14px 45px 14px 45px;
+border-radius: 9px;
+margin-top: 30px;
+color: white;
+height: 16%;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+}
+
+#inlineFormInputGroupName{
+        background: url(../assets/img/request/profile.png) no-repeat 5px 5px;
+    background-size: auto 70%;
+}
+
+#inlineFormInputGroupNumber{
+    background: url(../assets/img/request/telephone.png) no-repeat 5px 5px;
+    background-size: auto 70%;
+}
+
+.request__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 300px;
+height: 46px;
+background: #FFFFFF;
+border: 0.5px solid #787878;
+border-radius: 8px;
+margin: 12px 0 12px 0;
+}
