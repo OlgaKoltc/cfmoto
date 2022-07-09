@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-b';
+    src: url(../fonts/Montserrat-Black.ttf);
+}
+body {
+    font-family: 'Montserrat';
+}
+
+.modal{
+    max-width: 1440px;
+    height: 718px;
+    background-color:rgba(18, 18, 20, 0.8);
+    display: flex;
+    padding-top: 125px;
+}
+
+.modal__content{
+    width: 300px;
+    height: 40%;
+    background-color:#F4F4F4;
+    border-radius: 9px;
+    background-image: url(../assets/img/modal/пружина.png);
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+@media (max-width:1440px){
+    .modal__content{
+        max-width: 300px;
+    }
+}
+
+@media (max-width:767px){
+    .modal__content{
+       max-width: 180px;
+       margin-left: 10px;
+    }
+}
+
+.modal__close-button{
+    border: none;
+    padding-top: 10px;
+}
+
+.modal__content-span{
+    font-weight: 400;
+font-size: 18px;
+line-height: 165%;
+font-weight: 600;
+}
+
+.modal__content-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__specification{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
