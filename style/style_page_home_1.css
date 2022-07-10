@@ -13,15 +13,9 @@ body {
     max-height: 9068px;
     margin: 0 auto;
 }
-/*.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}*/
 a {
     text-decoration: none;
 }
-
 .section {
     max-width: 1440px;
     width: 100%;
@@ -32,12 +26,14 @@ a {
     grid-template-columns: repeat(4, 1fr);
     height: 245px;
     grid-gap: 31px;
-    /*max-width: 1440px;
-    width: 100%;*/
     margin: 0 auto;
   }
   .header {
     background-image:url(../assets/images/images_tour/ds_store.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 918px;
 }
 .header__container {
     max-width: 1300px;
@@ -173,43 +169,6 @@ a {
     position: relative;
     z-index:-1;
     right: 32px;
-  }
-  @media screen and (max-width: 768px) { .section-tour {
-    max-width: 360px;
-    width: 100%;
-    height: 2075px;
-  }
-  .item {
-      flex-direction: column;
-  }
-  .item__linetext, .item__linetext-reverse {
-      max-width: 340px;
-      width: 100%;
-  }
-  .item-reverse {
-     flex-direction: column-reverse;
-}
-.item__linetext-reverse {
-      flex-direction: row;
-      flex-shrink: 1;
-  }
-   .item__line {
-display: none;
-   }
-   .item-scroll {
-       height: 185px;
-   }
-   .item-scroll__foto {
-       width:10rem;
-   }
-   .video-block {
-       max-width: 360px;
-       width: 100%;
-       max-height: 440px;
-   }
-   .video-block__video {
-       width: 340px;
-   }
   }
   .section-tour {
     background-color: #F4F4F4;
@@ -367,7 +326,6 @@ max-height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: px;
 }
 .terms {
     background-image: url(../assets/images/page_home/terms.png);
@@ -382,32 +340,30 @@ max-height: 370px;
     text-align: center;
     align-content: center;
     justify-content: center;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 .terms__table {
     display: grid;
-    grid-template-columns: repeat(3, 385px);
-    grid-template-rows: repeat(2, 110px);
-    gap: 30px;
-    max-width: 1280px;
-    width: 100%;
-    max-height: 254px;
-   margin: 0 auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 45% 45%;
+    column-gap: 2%;
+    row-gap: 10%;
     margin-top: 30px;
     justify-content: center;
     align-content: center;
+    grid-template-areas: "ex1 ex2 ex3" "ex4 ex5 ex6";
 
 }
 .terms__cell {
+    max-height: 110px;
     background-color: #ffff;
     border-radius: 9px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    padding-top: 9px;
-    padding-left: 5px;
 }
 .terms__text {
     font-weight: 400;
@@ -717,16 +673,13 @@ align-items: center;
    padding-bottom: 30px;
     line-height: 172.5%;
     font-size: 18px;
-    padding-right: px;
 }
-
 .gifts__sertificate-image{
     background-image: url(../assets/img/gifts/MaskGroup_present.png);
     width: 636px;
     height: 311px;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: px;
 }
 
 .gifts__sertificate-image-info{
@@ -757,8 +710,7 @@ line-height: 130%;
 color: #FFFFFF;
 padding-top: 22px;
 }
-
-.gifts__sertificate-image-logo{
+.gifts__sertificate-image-logo {
     display: flex;
     width: 104px;
     height:  133px;
@@ -766,7 +718,7 @@ padding-top: 22px;
   margin-left: 220px;
 }
 .extra-service {
-    margin: 61px 0px 109px 0px;
+    margin: 0px 0px 100px 0px;
 }
 .extra_container {
     display: grid;
@@ -780,10 +732,6 @@ padding-top: 22px;
     justify-content: center;
     padding-top: 55px;
 }
-.extra-service {
-    margin: 61px 0px 109px 0px;
-}
-
 .extra__container {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
@@ -796,13 +744,6 @@ padding-top: 22px;
     justify-content: center;
     padding-top: 55px;
 }
-
-.extra__container * {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-}
-
 .extra__item {
     max-width: 309px;
     height: 303px;
@@ -909,7 +850,6 @@ padding-top: 22px;
     flex-basis: 50%;
     display: flex;
 }
-
 .contacts__item-home,
 .contacts__item-phone,
 .contacts__item-email {
@@ -951,75 +891,6 @@ padding-top: 22px;
 .footer__map {
     padding-left: -10%;
     max-width: 100%;
-}
-
-@media (max-width: 768px) {
-    .section__faq-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .faq-container__accordion {
-        width: 100%;
-    }
-
-    .extra__container {
-        display: flex;
-        flex-flow: row wrap;
-        max-width: 100%;
-    }
-
-    .extra__item img {
-        max-width: 100%;
-    }
-
-    .extra__item_photo and .extra__item_checkup and .extra__item_wayout and .extra__item_guide {
-        max-width: 47%;
-        flex-basis: 30%;
-    }
-
-    .footer__container-top {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-    }
-
-    .contacts__item {
-        flex-basis: 100%;
-        margin-bottom: 5%;
-    }
-
-    .footer__links {
-        display: flex;
-    }
-
-    .links-whatsup {
-        margin-left: -40%;
-    }
-
-
-    .footer__map {
-        margin-top: 5%;
-    }
-
-    .footer__container-nav {
-        flex-basis: 1 0 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 42px 0px 65px 0px;
-        padding-top: 3%;
-        height: 150px;
-    }
-
-    .footer__nav-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__logo {
-        margin-bottom: 3%;
-    }
 }
 @media screen and (max-width:768px){
     .header__container-top {
@@ -1108,7 +979,8 @@ padding-top: 22px;
     margin-bottom: 0px;
     
    }
-   .team-block__up {   padding: 20px;
+   .team-block__up {   
+    padding: 20px;
    }
    .team_block__title {
     font-family: 'Montserrat';
@@ -1126,9 +998,120 @@ padding-top: 22px;
    .team-block__col {
     display: flex;
     margin-top: 20px;
-    margin-right: ;
    }
-   .card {
-    max-width: 150px;
+   .section-tour {
+    max-width: 360px;
+    width: 100%;
+    height: 2075px;
+  }
+  .item {
+      flex-direction: column;
+  }
+  .item__linetext, .item__linetext-reverse {
+      max-width: 340px;
+      width: 100%;
+  }
+  .item-reverse {
+     flex-direction: column-reverse;
+}
+.item__linetext-reverse {
+      flex-direction: row;
+      flex-shrink: 1;
+  }
+   .item__line {
+display: none;
    }
+   .item-scroll {
+       height: 185px;
+   }
+   .item-scroll__foto {
+       width:10rem;
+   }
+   .video-block {
+       max-width: 360px;
+       width: 100%;
+       max-height: 440px;
+   }
+   .video-block__video {
+       width: 340px;
+   }
+   .terms__table {
+    display: flex;
+    flex-direction: column;
+   }
+   .terms__cell {
+       max-width: 340px;
+       height: 91px;
+   }
+   .section__faq-container {
+    display: flex;
+    flex-direction: column;
+}
+.faq-container__accordion {
+    width: 100%;
+}
+
+.extra__container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+}
+
+.extra__item img {
+    max-width: 100%;
+}
+
+.extra__item_photo and .extra__item_checkup and .extra__item_wayout and .extra__item_guide {
+    max-width: 47%;
+    flex-basis: 30%;
+}
+
+.footer__container-top {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.contacts__item {
+    flex-basis: 100%;
+    margin-bottom: 5%;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.links-whatsup {
+    margin-left: -40%;
+}
+
+
+.footer__map {
+    margin-top: 5%;
+}
+
+.footer__container-nav {
+    flex-basis: 1 0 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px 0px 65px 0px;
+    padding-top: 3%;
+    height: 150px;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    margin-bottom: 3%;
+}
+.sertificate-container {
+    flex-direction: column-reverse;
+}
+.gifts__sertificate-info {
+    width: 95%;
+}
 }
