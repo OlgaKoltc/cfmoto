@@ -21,13 +21,6 @@ a {
     width: 100%;
     margin: 0 auto;
 }
-.section-benefits{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 245px;
-    grid-gap: 31px;
-    margin: 0 auto;
-  }
   .header {
     background-image:url(../assets/images/images_tour/ds_store.png);
     background-repeat: no-repeat;
@@ -144,6 +137,14 @@ a {
 .header-button__vector {
     margin-left: 12px;
 }
+.section-benefits{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));;
+    height: 240px;
+    grid-gap: 31px;
+    max-width: 1380px;
+    width: 100%;
+  }
   .benefits__title{
       font-weight: 400;
     font-size: 18px;
@@ -945,6 +946,13 @@ padding-top: 22px;
     margin-left: 40px;
     margin-bottom: 100px;
    }
+   .section-benefits{
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));;
+   height: 500px;
+}
+.benefits__title{
+    width: 160px;
+}
    .tour__button {
     font-family: 'Montserrat';
     font-style: normal;
@@ -963,10 +971,6 @@ padding-top: 22px;
     line-height: 120%;
     text-align: center;
    }
-   /*.section-photo__item {
-    display: none;
-   }*/
-
    .section-scroll__title {
     font-family: 'Montserrat';
     font-style: normal;
