@@ -139,7 +139,7 @@ max-height: 370px;
     justify-content: space-around;
 max-width: 1078px;
 width: 100%;
-height: 400px;
+height: 350px;
 margin: 0 auto;
 color: #121214;
 font-weight: 400;
@@ -205,6 +205,46 @@ text-align: center;
     background-position: center;
     background-repeat: no-repeat;
 }
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1078px;
+    width: 100%;
+    height: 325px;
+    margin: 0 auto;
+}
 .booking-item__date {
 
+}
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+.booking-container__button {
+    background: #037E8C;
+    color: #ffff;
+}
+@media screen and (max-width: 798px;){
+.container-page {
+    max-width: 340px;
+    width: 100%;
+    max-height: 2470px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.item-routе {
+    max-width: 320px;
+    width: 100%;
+    max-height: 490px;
+}
+.foto {
+    width: 185px;
+    height: 185px;
+}
 }
