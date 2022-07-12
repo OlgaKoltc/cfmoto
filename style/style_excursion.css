@@ -12,7 +12,7 @@ body {
 .container {
     max-width: 1540px;
     width: 100%;
-    max-height: 2360px;
+    max-height: 2560px;
     margin: 0 auto;
     background-color:  rgba(18, 18, 20, 0.8);
 }
@@ -204,6 +204,7 @@ text-align: center;
     background-image: url(../assets/images/page_excr/fon_tour.png);
     background-position: center;
     background-repeat: no-repeat;
+    max-height: 500px;
 }
 .container-form {
     display: flex;
